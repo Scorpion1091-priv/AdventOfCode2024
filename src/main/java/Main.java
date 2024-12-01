@@ -24,8 +24,8 @@ public class Main {
     private static Long similarity() {
         long similarity = 0;
         for (Integer id : list1) {
-            long appereance = list2.stream().filter(num -> Objects.equals(num, id)).count();
-            similarity += id * appereance;
+            long appearance = list2.stream().filter(num -> Objects.equals(num, id)).count();
+            similarity += id * appearance;
         }
         return similarity;
     }
