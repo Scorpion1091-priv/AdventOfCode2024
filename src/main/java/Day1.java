@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
-public class Main {
+public class Day1 {
 
     private static final List<Integer> list1 = new ArrayList<>();
     private static final List<Integer> list2 = new ArrayList<>();
@@ -31,7 +31,7 @@ public class Main {
     }
 
     private static void readLists(String filename) {
-        ClassLoader classLoader = Main.class.getClassLoader();
+        ClassLoader classLoader = Day1.class.getClassLoader();
 
         try (InputStream inputStream = classLoader.getResourceAsStream(filename);
              InputStreamReader streamReader = new InputStreamReader(inputStream, StandardCharsets.UTF_8);
